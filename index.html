@@ -6,10 +6,13 @@
     <title>Using JavaScript Live Demo</title>
 </head>
 <body>
-    <h1>We will do some live demos here</h1>
+    <h1 id="demo1">We will do some live demos here</h1>
     <script>
-
-
+        document.getElementById("demo1").innerHTML = "Hello JavaScript World";
     </script>
+    <p>This is ordinary text on the page.</p>
+    <img id="blue" src="Gradient.png" alt="blue patch" style="width:200px">
+    <button onclick="document.getElementById('blue').src='Gradient1.png'">Horizontal</button>
+    <button onclick="document.getElementById('blue').src='Gradient.png'">Vertical</button>
 </body>
 </html>
