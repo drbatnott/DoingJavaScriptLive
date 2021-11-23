@@ -7,12 +7,18 @@
 </head>
 <body>
     <h1 id="demo1">We will do some live demos here</h1>
-    <script>
-        document.getElementById("demo1").innerHTML = "Hello JavaScript World";
+    <script>       
+        let x = 1;
+        var y = 2;
+        const z = 3;
+        y = x + z;
+        document.getElementById("demo1").innerHTML = "Hello JavaScript World x " + x + " y " + y + " z " + z ;
     </script>
     <p>This is ordinary text on the page.</p>
     <img id="blue" src="Gradient.png" alt="blue patch" style="width:200px">
     <button onclick="document.getElementById('blue').src='Gradient1.png'">Horizontal</button>
-    <button onclick="document.getElementById('blue').src='Gradient.png'">Vertical</button>
+    <button onclick="document.getElementById('blue').src='Gradient.png'">Vertical</button><br />
+    <button onclick="document.getElementById('demo1').style.fontSize='40px'">Change FontSize Big</button>
+    <button onclick="document.getElementById('demo1').style.fontSize='20px'">Change FontSize Small</button>
 </body>
 </html>
